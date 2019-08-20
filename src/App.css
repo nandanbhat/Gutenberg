@@ -1,33 +1,36 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: rgb(27, 101, 238);
+    position: relative;
+    min-width: 1024px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body, #root, #root>div{
+    height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.section1{
+    height: 250px;
+    text-align: center;
+    position: relative;
+    font-size: 26px;
+    padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section2{
+    margin: 10px;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary{
+    display: flex;
+    margin: 10px;
+    width: 400px;
+    justify-content:  left;
 }
