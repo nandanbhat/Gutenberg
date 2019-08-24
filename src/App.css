@@ -1,36 +1,280 @@
 * {
     box-sizing: border-box;
-}
-
-body{
+ }
+  
+ body {
     font-family: 'Times New Roman', Times, serif;
+    background-color: #566be6;
     color: white;
-    background-color: rgb(27, 101, 238);
     position: relative;
-    min-width: 1024px;
+    width: 100%;
+    margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-}
-
-body, #root, #root>div{
+ }
+  
+ body,
+ #root,
+ #root>div {
+    width: 100%;
     height: 100%;
-}
-
-.section1{
+ }
+  
+ .title {
     height: 250px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: relative;
     font-size: 26px;
     padding: 40px;
-}
-
-.section2{
-    margin: 10px;
-}
-
-.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary{
-    display: flex;
+ }
+  
+ .list {
+    padding: 40px;
+    margin: 40px;
+    width: 95%;
+ }
+  
+ .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
+    display: flex wrap;
     margin: 10px;
     width: 400px;
-    justify-content:  left;
-}
+    justify-content: left;
+    font-size: 16px;
+ }
+  
+  
+ [class*="col-"] {
+    padding: 15px;
+    display: inline-block;
+ }
+  
+ .col-1 {
+    width: 8.33%;
+ }
+  
+ .col-2 {
+    width: 16.66%;
+ }
+  
+ .col-3 {
+    width: 25%;
+ }
+  
+ .col-4 {
+    width: 33.33%;
+ }
+  
+ .col-5 {
+    width: 41.66%;
+ }
+  
+ .col-6 {
+    width: 50%;
+ }
+  
+ .col-7 {
+    width: 58.33%;
+ }
+  
+ .col-8 {
+    width: 66.66%;
+ }
+  
+ .col-9 {
+    width: 75%;
+ }
+  
+ .col-10 {
+    width: 83.33%;
+ }
+  
+ .col-11 {
+    width: 91.66%;
+ }
+  
+ .col-12 {
+    width: 100%;
+ }
+  
+ .image{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+  
+ .books{
+    background-color: white;
+    color: black;
+ }
+  
+ .books .bookName{
+    font-weight: bold;
+ }
+  
+ .topnav {
+    overflow: hidden;
+    padding: 2px;
+    background-color: #566be6;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 4px;
+    font-size: 17px;
+    width: 94%;
+    border: none;
+  }
+   .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 4px;
+    background: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container .back {
+    float: left;
+    margin-top: 4px;
+    margin-right: 0px;
+    background: white;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+ @media only screen and (max-width: 768px) {
+    .title {
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        font-size: 20px;
+        padding: 50px;
+    }
+  
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
+        width: 93%;
+        margin: 20px;
+        padding: 15px;
+        font-size: 26px;
+        display: flex;
+    }
+  
+    .topnav input[type=text] {
+        width: 90%;
+      }
+  
+      .topnav .search-container button {
+        margin-left: 3px;
+      }
+   
+    [class*="col-"] {
+        padding: 15px;
+        display: inline-table;
+    }
+    .col-m-1 {
+        width: 8.33%;
+    }
+   
+    .col-m-2 {
+        width: 16.66%;
+    }
+   
+    .col-m-3 {
+        width: 25%;
+    }
+   
+    .col-m-4 {
+        width: 33.33%;
+    }
+   
+    .col-m-5 {
+        width: 41.66%;
+    }
+   
+    .col-m-6 {
+        width: 50%;
+    }
+   
+    .col-m-7 {
+        width: 58.33%;
+    }
+   
+    .col-m-8 {
+        width: 66.66%;
+    }
+   
+    .col-m-9 {
+        width: 75%;
+    }
+   
+    .col-m-10 {
+        width: 83.33%;
+    }
+   
+    .col-m-11 {
+        width: 91.66%;
+    }
+   
+    .col-m-12 {
+        width: 100%;
+    }
+ }
+  
+ @media only screen and (max-width: 481px) {
+  
+    .title {
+        height: 150px;
+        font-size: 16px;
+        padding: 30px;
+    }
+  
+    .list {
+        padding: 20px;
+        margin: 0px;
+        width: 100%;
+    }
+  
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
+        margin: 10px;
+        padding: 5px;
+        font-size: 16px;
+        display: flex;
+    }
+  
+    [class*="col-"] {
+        width: 100%;
+        padding-left: 44px;
+    }
+  
+    .image{
+        width: 150px;
+        height: 190px;
+    }
+  
+    .topnav .search-container .back {
+        margin: 4px 0;
+    }
+  
+    .topnav .search-container button {
+        margin-left: 0;
+      }
+  
+    .topnav input[type=text] {
+        width: 81%;
+    }
+ }
+  
+ @media only screen and (max-width: 360px) {
+    .topnav input[type=text] {
+        width: 80%;
+    }
+ }
+ 
+ 

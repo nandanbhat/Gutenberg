@@ -2,65 +2,57 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
  
-const Title = () => {
- return (
-   <div className="title">
-     <h1>React Router demo</h1>
-     <Link to="/list"><button>Show the List</button></Link>
-   </div>
- )
-}
+import "./App.css"
+ 
 const List = () => {
  return (
-   <div className="nav">
-   <h1>React Router demo</h1>
-     <Link to="/page1">
-       <Button variant="contained" color="primary">
-         Page1
-     </Button>
-     </Link>
-     <Link to="/page2">
-       <Button variant="contained" color="primary">
-         Page2
-     </Button>
-     </Link>
-     <Link to="/page3">
-       <Button variant="contained" color="primary">
-         Page3
-     </Button>
-     </Link>
+   <div className="home">
+     <div className="title">
+       <h1>Guttenberg Project</h1>
+     </div>
+     <div className="list">
+       <Link to="/fiction">
+         <Button variant="contained" color="primary">
+           fiction
+         </Button>
+       </Link>
+       <Link to="/drama">
+         <Button variant="contained" color="primary">
+           drama
+         </Button>
+       </Link>
+       <Link to="/humor">
+         <Button variant="contained" color="primary">
+           humor
+         </Button>
+       </Link>
+       <Link to="/politics">
+         <Button variant="contained" color="primary">
+           politics
+         </Button>
+       </Link>
+       <Link to="/philosophy">
+         <Button variant="contained" color="primary">
+           philosophy
+         </Button>
+       </Link>
+       <Link to="/history">
+         <Button variant="contained" color="primary">
+           history
+         </Button>
+       </Link>
+       <Link to="/adventure">
+         <Button variant="contained" color="primary">
+           adventure
+         </Button>
+       </Link>
+     </div>
    </div>
  )
 }
  
-const Page1 = () => {
- return (
-   <div className="title">
-     <h1>This is Page1</h1>
-     <Link to="/"><button>Back list</button></Link>
-   </div>
- )
-}
- 
-const Page2 = () => {
- return (
-   <div className="title">
-     <h1>This is Page2</h1>
-     <Link to="/"><button>Back list</button></Link>
-   </div>
- )
-}
- 
-const Page3 = () => {
- return (
-   <div className="title">
-     <h1>This is Page3</h1>
-     <Link to="/"><button>Back list</button></Link>
-   </div>
- )
-}
- 
-export { Title, List, Page1, Page2, Page3 }
+export { List }
  
 //http://skunkworks.ignitesol.com:8000/
+ 
 
